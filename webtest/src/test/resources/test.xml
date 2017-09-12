@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" verbose="1">
+
+    <test name="samplePage Test" preseve-order="true">
+        <classes>
+            <class name="com.github.junyinghu.automation.TestMyWeb" />
+            <class name="com.github.junyinghu.automation.TestForm" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite1]">
+  <test name="samplePage Test(failed)">
+    <classes>
+      <class name="com.github.junyinghu.automation.TestMyWeb">
+        <methods>
+          <include name="testClick"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.github.junyinghu.automation.TestMyWeb -->
+      <class name="com.github.junyinghu.automation.TestForm">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="openGoogleSearch"/>
+        </methods>
+      </class> <!-- com.github.junyinghu.automation.TestForm -->
+    </classes>
+  </test> <!-- samplePage Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
