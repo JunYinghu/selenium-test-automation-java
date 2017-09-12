@@ -21,10 +21,10 @@ public class RadioCheck {
 
     public void radioCheck(String radioSelected, String radioNoSelected){
         String userEmailEnalbe = properties.getProperty(radioSelected);
-        WebElement CurrentUserEmailEnable = driver.findElement(By.xpath(userEmailEnalbe));
+        WebElement CurrentUserEmailEnable = driver.findElement(By.id(userEmailEnalbe));
         if (CurrentUserEmailEnable.isSelected()) {
             String userEmailDisable = properties.getProperty(radioNoSelected);
-            WebElement CurrentUserEmailDisable = driver.findElement(By.xpath(userEmailDisable));
+            WebElement CurrentUserEmailDisable = driver.findElement(By.id(userEmailDisable));
             CurrentUserEmailDisable.click();
         }
 
@@ -32,6 +32,7 @@ public class RadioCheck {
             CurrentUserEmailEnable.click();
         }
     }
+
 
 }
 

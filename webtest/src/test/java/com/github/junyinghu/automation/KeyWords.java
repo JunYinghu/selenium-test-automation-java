@@ -70,6 +70,21 @@ public class KeyWords extends RadioCheck {
 
     public void toggleAllRadioCheck(){
         radioCheck("location_board_video_id_user_email_y",
-                "location_board_video_id_user_email_n ");
+                "location_board_video_id_user_email_n");
+
+        radioCheck("location_board_video_id_admin_email_y",
+                "location_board_video_id_admin_email_n");
+
+        radioCheck("location_board_video_id_private_msg_y",
+                "location_board_video_id_private_msg_n");
+
+        radioCheck("location_board_video_id_hide_online_y",
+                "location_board_video_id_hide_online_n");
+
+        radioCheck("location_board_video_id_notify_msg_y",
+                "location_board_video_id_notify_msg_n");
+        radioCheck("location_board_video_id_pop_win_y",
+                "location_board_video_id_pop_win_n");
+
     }
 }
