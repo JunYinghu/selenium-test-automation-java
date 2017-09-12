@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="29.148" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="31.049" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -66,6 +66,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="openGoogleSearch" classname="com.github.junyinghu.automation.TestForm" time="20.853"/>
-  <testcase name="modificationsetting" classname="com.github.junyinghu.automation.TestForm" time="1.719"/>
+  <testcase name="openGoogleSearch" classname="com.github.junyinghu.automation.TestForm" time="21.295"/>
+  <testcase name="modificationsetting" classname="com.github.junyinghu.automation.TestForm" time="2.094"/>
 </testsuite>

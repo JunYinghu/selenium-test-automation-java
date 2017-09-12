@@ -100,8 +100,6 @@ public class TestMyWeb {
             }
         }
 
-
-
         Reporter.log("clicking", true);
         //System.out.println("hello");
         Thread.sleep(5000);

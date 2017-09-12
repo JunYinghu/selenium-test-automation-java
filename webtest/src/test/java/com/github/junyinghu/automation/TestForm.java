@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Properties;
 
 public class TestForm {
@@ -53,6 +54,21 @@ public class TestForm {
     @Test(dependsOnMethods = {"openGoogleSearch"}) //can put multiple by ,
     public void modificationsetting() {
         searchKeyword.toggleAllRadioCheck();
+        List<String> dropDownlistAllLanguage = searchKeyword.dropDownlist("location_board_drop_id_language");
+        int dropDownlistLanguageSize =dropDownlistAllLanguage.size();
+        //Reporter.log("this is drop down list option size for Language "+dropDownlistAllLanguage,true);
+
+        List<String> dropDownlistAllTimeZone = searchKeyword.dropDownlist("location_board_drop_id_timezone");
+        int dropDownlistAllTimeZoneSize =dropDownlistAllTimeZone.size();
+        //Reporter.log("this is drop down list option size for TimeZone "+dropDownlistAllTimeZone,true);
+
+        searchKeyword.radioCheck("location_board_video_id_sum_time_y",
+                "location_board_video_id_sum_time_n");
+
+        List<String> dropDownlistAllDateFormat = searchKeyword.dropDownlist("location_board_drop_id_dateformat");
+        int dropDownlistAllDataFormatSize =dropDownlistAllDateFormat.size();
+        Reporter.log("this is drop down list option size for DataFormat "+dropDownlistAllDataFormatSize,true);
+
     }
 
 
