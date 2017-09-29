@@ -35,7 +35,7 @@ public class TestForm {
         driver = new FirefoxDriver();
         driver.get("http://google.com.sg");
         searchKeyword = new KeyWords(driver, properties);
-        jse = (JavascriptExecutor)driver;
+        jse = (JavascriptExecutor) driver;
 
     }
 
@@ -45,17 +45,16 @@ public class TestForm {
         driver.close();
     }
 
-//    @Test
-//    public void openGoogleSearch() throws InterruptedException {
-//        searchKeyword.enterKeywordsSearch();
-//        Thread.sleep(5000);
-//        searchKeyword.clickUrl();
-//        searchKeyword.login();
-//        Thread.sleep(5000);
-//        searchKeyword.setting();
-//
-//
-//    }
+    @Test
+    public void openGoogleSearch() throws InterruptedException {
+        searchKeyword.enterKeywordsSearch();
+        Thread.sleep(5000);
+        searchKeyword.clickUrl();
+        searchKeyword.login();
+        Thread.sleep(5000);
+        searchKeyword.setting();
+
+    }
 //
 //    @Test(dependsOnMethods = {"openGoogleSearch"}) //can put multiple by ,
 //    public void modificationsetting() {
@@ -97,23 +96,5 @@ public class TestForm {
 //        }
 //        driver.switchTo().defaultContent();
 //    }
-
-    @Test
-    public void testWindowhand () throws Exception {
-        firstWindow();
-        secondWindow();
-        Reporter.log ("number of window"+ driver.getWindowHandles(),true);
-        driver.switchTo().window(secondWindowOpen);
-
-    }
-    private void firstWindow (){
-        driver.get ("https://www.bing.com/");
-        firstWindowOpen = driver.getWindowHandle();
-    }
-    private void secondWindow (){
-
-        jse.executeScript("window.open ('http://www.google.com/');");
-        secondWindowOpen = driver.getWindowHandle();
-    }
 
 }

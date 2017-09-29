@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.227 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 89.707 s <<< FAILURE! - in TestSuite
+testWindowhand(com.github.junyinghu.automation.Elearning)  Time elapsed: 18.653 s  <<< FAILURE!
+com.github.junyinghu.automation.WrongPageException: incorrect page title
+	at com.github.junyinghu.automation.Elearning.testWindowhand(Elearning.java:38)
+

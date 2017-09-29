@@ -4,7 +4,9 @@ com\github\junyinghu\automation\SearchHotel.class
 com\github\junyinghu\automation\TestMobile.class
 com\github\junyinghu\automation\AndroidDriver.class
 com\github\junyinghu\automation\Search.class
+com\github\junyinghu\automation\WrongPageException.class
 com\github\junyinghu\automation\RadioCheck.class
 com\github\junyinghu\automation\test\KeyWords.class
+com\github\junyinghu\automation\Elearning.class
 com\github\junyinghu\automation\ReadCsv.class
 com\github\junyinghu\automation\TestForm.class
