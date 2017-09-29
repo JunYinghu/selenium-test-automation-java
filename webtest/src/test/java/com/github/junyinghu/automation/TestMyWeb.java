@@ -4,9 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -17,16 +14,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.logging.Level;
 
 public class TestMyWeb {
-    private  WebDriver driver;
-    private  Properties properties = new Properties();
-    private  File file = new File("src/test/resources/xpath_data.properties");
-    private  Search configurate;
+    private WebDriver driver;
+    private Properties properties = new Properties();
+    private File file = new File("src/test/resources/xpath_data.properties");
+    private Search configurate;
     private SearchHotel hotelconfiguate;
     private ReadCsv readCsv = new ReadCsv();
 
@@ -43,7 +38,7 @@ public class TestMyWeb {
         driver.get("http://www.singaporeair.com/en_UK/sg/home#flightSearch");
         configurate = new Search(driver, properties);
         configurate.initializeSearch();
-        hotelconfiguate = new SearchHotel(driver,properties);
+        hotelconfiguate = new SearchHotel(driver, properties);
 
     }
 
@@ -53,18 +48,19 @@ public class TestMyWeb {
         driver.close();
     }
 
-    @Test(enabled = false)
+    //  (enabled = false)
+    @Test
     public void testBookTrip() throws InterruptedException {
-       int maxOrigin = configurate.getCountOfOrigin();
-       int maxDestination = configurate.getCountOfDestination();
+        int maxOrigin = configurate.getCountOfOrigin();
+        int maxDestination = configurate.getCountOfDestination();
 
 
-       for(int i=0;i<maxOrigin;i++){
+        for (int i = 0; i < maxOrigin; i++) {
 
-           for (int j=0;j<maxDestination;j++){
-               configurate.searchPage(i,j);
-           }
-       }
+            for (int j = 0; j < maxDestination; j++) {
+                configurate.searchPage(i, j);
+            }
+        }
     }
 
     @Test
@@ -72,25 +68,25 @@ public class TestMyWeb {
         WebElement clickHotel = driver.findElement(By.xpath("/html/body/div[3]/div[3]/div/aside/div/div/div[1]/ul/li[2]/a/span[2]"));
         clickHotel.click();
         List<String> hotels = hotelconfiguate.hotelDesination();
-        int hotelLen =hotels.size();
+        int hotelLen = hotels.size();
         List<String> room = hotelconfiguate.room();
         int roomLen = room.size();
         List<String> adult = hotelconfiguate.adult();
         int adultLen = adult.size();
         List<String> child = hotelconfiguate.child();
         int childLen = child.size();
-        Reporter.log("this get Hotel00",hotelLen,true);
-        Reporter.log("this get roomLen",roomLen,true);
+        Reporter.log("this get Hotel00" + room, true);
+        Reporter.log("this get roomLen", roomLen, true);
 
         List<String> destinations = readCsv.getDestinations();
-        for(String destination: destinations){
+        for (String destination : destinations) {
             hotelconfiguate.selectDesignatio(destination);
             hotelconfiguate.selectcheckinout();
 
-            for (int j=0;j<roomLen;j++){
+            for (int j = 0; j < roomLen; j++) {
                 hotelconfiguate.selectRoom(j);
 
-                for(int a=0;a<adultLen;a++) {
+                for (int a = 0; a < adultLen; a++) {
                     hotelconfiguate.selectAdult(a);
 
                     for (int c = 0; c < childLen; c++) {

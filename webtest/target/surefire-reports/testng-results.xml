@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[this is drop down list option size for DataFormat 1]]>
+      <![CDATA[number of window[4294967297, 4294967306]]]>
     </line>
     <line>
       <![CDATA[afterClass]]>
     </line>
   </reporter-output>
-  <suite name="Suite1" duration-ms="30487" started-at="2017-09-12T02:47:39Z" finished-at="2017-09-12T02:48:10Z">
+  <suite name="Suite1" duration-ms="10080" started-at="2017-09-29T01:44:13Z" finished-at="2017-09-29T01:44:23Z">
     <groups>
     </groups>
-    <test name="samplePage Test" duration-ms="30487" started-at="2017-09-12T02:47:39Z" finished-at="2017-09-12T02:48:10Z">
+    <test name="samplePage Test" duration-ms="10080" started-at="2017-09-29T01:44:13Z" finished-at="2017-09-29T01:44:23Z">
       <class name="com.github.junyinghu.automation.TestForm">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.github.junyinghu.automation.TestForm@3f2a3a5]" name="beforeClass" is-config="true" duration-ms="6803" started-at="2017-09-12T10:47:39Z" finished-at="2017-09-12T10:47:46Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.github.junyinghu.automation.TestForm@35fb3008]" name="beforeClass" is-config="true" duration-ms="8214" started-at="2017-09-29T09:44:13Z" finished-at="2017-09-29T09:44:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openGoogleSearch()[pri:0, instance:com.github.junyinghu.automation.TestForm@3f2a3a5]" name="openGoogleSearch" duration-ms="21295" started-at="2017-09-12T10:47:46Z" finished-at="2017-09-12T10:48:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openGoogleSearch -->
-        <test-method status="PASS" signature="modificationsetting()[pri:0, instance:com.github.junyinghu.automation.TestForm@3f2a3a5]" name="modificationsetting" duration-ms="2094" started-at="2017-09-12T10:48:08Z" depends-on-methods="com.github.junyinghu.automation.TestForm.openGoogleSearch" finished-at="2017-09-12T10:48:10Z">
+        <test-method status="PASS" signature="testWindowhand()[pri:0, instance:com.github.junyinghu.automation.TestForm@35fb3008]" name="testWindowhand" duration-ms="1757" started-at="2017-09-29T09:44:21Z" finished-at="2017-09-29T09:44:23Z">
           <reporter-output>
             <line>
-              <![CDATA[this is drop down list option size for DataFormat 1]]>
+              <![CDATA[number of window[4294967297, 4294967306]]]>
             </line>
           </reporter-output>
-        </test-method> <!-- modificationsetting -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.github.junyinghu.automation.TestForm@3f2a3a5]" name="afterClass" is-config="true" duration-ms="295" started-at="2017-09-12T10:48:10Z" finished-at="2017-09-12T10:48:10Z">
+        </test-method> <!-- testWindowhand -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.github.junyinghu.automation.TestForm@35fb3008]" name="afterClass" is-config="true" duration-ms="100" started-at="2017-09-29T09:44:23Z" finished-at="2017-09-29T09:44:23Z">
           <reporter-output>
             <line>
               <![CDATA[afterClass]]>

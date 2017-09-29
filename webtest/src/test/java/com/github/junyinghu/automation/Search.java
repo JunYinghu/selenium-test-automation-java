@@ -30,6 +30,8 @@ public class Search {
         for (WebElement option : options) {
             String value = option.getAttribute("innerHTML").trim();
             availableOrigin.add(value);
+
+            Reporter.log("this get list"+availableOrigin,true);
         }
 
         List<WebElement> toList = driver.findElements(By.xpath("/html/body/div[3]/div[3]/div/aside/div/div/div[1]/div/div[1]/form[1]/fieldset/div[1]/div/div[2]/div[2]/div/div/label[2]/select/option"));

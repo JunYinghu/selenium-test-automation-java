@@ -1,1 +1,10 @@
+com\github\junyinghu\automation\Locations.class
+com\github\junyinghu\automation\TestMyWeb.class
+com\github\junyinghu\automation\SearchHotel.class
+com\github\junyinghu\automation\TestMobile.class
+com\github\junyinghu\automation\AndroidDriver.class
+com\github\junyinghu\automation\Search.class
 com\github\junyinghu\automation\RadioCheck.class
+com\github\junyinghu\automation\test\KeyWords.class
+com\github\junyinghu\automation\ReadCsv.class
+com\github\junyinghu\automation\TestForm.class
