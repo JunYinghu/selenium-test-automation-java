@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/com.github.junying.cucumber.iml" filepath="$PROJECT_DIR$/com.github.junying.cucumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/selenium-test-automation-java.iml" filepath="$PROJECT_DIR$/.idea/selenium-test-automation-java.iml" />
     </modules>
   </component>
 </project>
